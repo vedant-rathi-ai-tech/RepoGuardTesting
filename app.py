@@ -8,6 +8,9 @@ app = Flask(__name__)
 # This app uses multiple vulnerable dependencies
 # The vulnerabilities are in the versions specified in requirements.txt
 
+def remediation_probe():
+    return "broken"
+
 @app.route('/')
 def home():
     return '''
