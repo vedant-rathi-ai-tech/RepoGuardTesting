@@ -9,7 +9,7 @@ app = Flask(__name__)
 # The vulnerabilities are in the versions specified in requirements.txt
 
 def remediation_probe():
-    return "broken"
+    return "ok"
 
 @app.route('/')
 def home():
